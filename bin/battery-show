@@ -1,0 +1,25 @@
+# coloring output: https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
+
+bat_now=$(cat /sys/class/power_supply/BAT0/energy_now)
+bat_full=$(cat /sys/class/power_supply/BAT0/energy_full)
+bat_percentage=$(echo "100 * $bat_now / $bat_full" | bc -l | cut -f1 -d".")
+
+battery_status=$(acpi)
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+orange=`tput setaf 202`
+
+if ((70<=$bat_percentage))
+then
+  echo "${green}$battery_status"
+elif ((50<=$bat_percentage))
+then
+  echo "${yellow}$battery_status"
+elif ((30<=$bat_percentage))
+then
+  echo "${orange}$battery_status"
+else
+  echo "${yellow}$battery_status"
+fi

@@ -1,0 +1,19 @@
+Misc notes.
+
+* Manual steps
+** Setting up LTE connection
+   Run ~nm-connection-editor~ to set up the connection.
+   
+   Note that we disable DHCP for the WWAN interface in ~configuration.nix~.
+*** Troubleshooting
+   The LTE modem on my T490 is fibocom 830-eb
+  
+   Potentially useful commands:
+   #+begin_src 
+   systemctl status ModemManager.service
+   mmcli -L
+   mmcli -m 0
+   nm-connection-editor
+   journalctl -u ModemManager.service
+   dmesg
+   #+end_src

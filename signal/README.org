@@ -1,0 +1,14 @@
+* resize side panel
+https://github.com/signalapp/Signal-Desktop/issues/2510
+Until the Signal team gets around to implementing this, here's a quick workaround:
+
+
+1. Select View from the menu, then Toggle Developer Tools.
+2. In the /Elements tab/, expand the /body tag/, then the /div tag/ of class inbox index.
+3. Click on the div tag of class ~gutter inactive~.
+4. In the Styles tab, which is usually underneath, find the gutter class.
+5. Change the width parameter to 75px (the size may vary on your screen)
+6. Enjoy!
+7. The only downside is you'll have to repeat these steps every time you relaunch Signal.
+
+(note: make sure you use the correct ~body~ parameter. the correct one has 320px as default)

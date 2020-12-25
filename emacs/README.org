@@ -1,0 +1,21 @@
+Note: I am not backing up my emacs config at the moment, since it is a fairly vanilla Spacemacs+layers setup.
+* Known issues
+** Annoying ~completion-at-point~ in ~#+begin_src bash~
+   Here is how to reproduce. Move point to the line below, then hit ~o~.
+   #+begin_src bash
+   #+end_src
+   
+   Issue description: a ~helm~ window comes up (labelled ~helm-completion-at-point~) which provides useless completion.
+   This also occurs when pressing ~Tab~ in insert mode.
+*** Possible solution
+  Selectively disable ~helm-completion-at-point~ by running
+  #+begin_src lisp
+    (setq helm-mode-handle-completion-in-region nil
+  #+end_src
+  (to evaluate, ~M-x lisp eval~)
+* Future work
+  - Add yasnippet snippets
+  - Bring back old org-babel templating mechanism, see https://old.reddit.com/r/orgmode/comments/aaq76d/new_template_mechanism/ and https://old.reddit.com/r/emacs/comments/ad68zk/get_easytemplates_back_in_orgmode_92/
+  - Selectively disable ~helm-completion-at-point~, see https://old.reddit.com/r/emacs/comments/c8aauy/disable_helm_for_complationatpoint/
+  - Make Emacs ~nix-shell~-aware
+  - Set zathura as pdf viewer in TeX-mode

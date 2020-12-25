@@ -1,0 +1,4 @@
+* Future work
+** battery-show
+   - Detect charging status
+   - Color warning based on battery level

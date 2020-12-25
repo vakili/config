@@ -1,0 +1,5 @@
+My config files on NixOS.
+
+This may be of interest to you if you share a similar aesthetic to mine. The unifying theme is vim keybindings.
+
+ The XMonad configuration is fairly well-documented, so if you are curious, I suggest starting there.

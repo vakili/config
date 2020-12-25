@@ -1,0 +1,3 @@
+~userChrome.css~ makes Firefox look like this:
+
+[[file:firefox-userchrome-screenshot.png][firefox-userchrome-screenshot.png]]

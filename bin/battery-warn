@@ -1,0 +1,14 @@
+warn () {
+    echo "battery low" | osd_cat -A center -p middle  -f -*-*-bold-*-*-*-96-120-*-*-*-*-*-* -cgreen -d 3
+}
+
+
+bat_now=$(cat /sys/class/power_supply/BAT0/energy_now)
+bat_full=$(cat /sys/class/power_supply/BAT0/energy_full)
+bat_ratio=$(echo "$bat_now / $bat_full" | bc -l)
+bat_low=$(echo "$bat_ratio < 0.05" | bc)
+
+if [ $bat_low == 1 ];
+then
+    warn
+fi

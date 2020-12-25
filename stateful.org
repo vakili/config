@@ -1,0 +1,17 @@
+stateful steps
+  element
+    authenticate
+    set dark theme
+  signal
+    authenticate
+    set dark theme
+  telegram
+    authenticate
+    set dark theme
+  emacs
+    git clone --single-branch -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+    configure spacemacs
+  nix-search
+    nix-env -qa -P | awk '{print $1}' > /home/infty/.cache/nixos-options/packages.txt
+  direnv
+    run `direnv-allow`

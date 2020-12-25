@@ -1,0 +1,10 @@
+home-manager documentation: ~man home-configuration.nix~ or https://rycee.gitlab.io/home-manager/ 
+* Notes
+** Escape dot character in Nix
+  Surround the dot with double quotes.
+** Install packages directly from nixpkgs master git branch
+   see https://stackoverflow.com/questions/38092553/nix-install-derivation-directly-from-master-branch
+   #+begin_src shell
+   cd nixpkgs
+   nix-build -A mypackage; nix-env -i $(readlink result)
+   #+end_src

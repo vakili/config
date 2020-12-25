@@ -1,0 +1,4 @@
+# source https://superuser.com/questions/722461/how-can-you-remove-duplicates-from-bash-history
+nl ~/.bash_history | sort -k 2  -k 1,1nr| uniq -f 1 | sort -n | cut -f 2 > unduped_history
+cp unduped_history ~/.bash_history
+rm unduped_history
