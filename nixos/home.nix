@@ -24,6 +24,8 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
+    xcalib
+    gopass
     rxvt-unicode
     ueberzug
     libcaca
