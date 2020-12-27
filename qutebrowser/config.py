@@ -59,6 +59,7 @@ c.url.searchengines = {
    "hg": 'https://hoogle.haskell.org/?hoogle={}',
    "gl": 'http://gen.lib.rus.ec/search.php?req={}',
    "yc": 'https://www.google.com/search?hl=en&q=site%3Anews.ycombinator.com%20{}',  # hacker news
+   "rr": 'https://www.google.com/search?hl=en&q=site%3Areddit.com%20{}',
    "sh": 'http://symbolhound.com/?q={}',
 }
 
