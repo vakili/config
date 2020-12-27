@@ -232,6 +232,7 @@ in {
   };
 
   home.file = {
+    ".config/nixpkgs/config.nix".source                       = "${configdir}/nixos/config.nix";
     ".config/alacritty/alacritty.yml".source                              = "${configdir}/alacritty/alacritty.yml";
     ".emacs.d/layers/direnv".source                           = "${configdir}/emacs/layers/direnv";
     ".xmonad/autostart.sh".source                             = "${configdir}/xmonad/autostart.sh";
