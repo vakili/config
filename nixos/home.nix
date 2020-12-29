@@ -232,10 +232,11 @@ in {
       enable = true;
       enableBashIntegration = true;
     };
-    pazi = {
-    enable = true;
-    enableBashIntegration = true;
+    zoxide = {
+      enable = true;
+      enableBashIntegration = true;
     };
+
   };
 
   home.file = {
