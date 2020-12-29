@@ -85,6 +85,13 @@ in {
     extraGroups = [ "wheel" "video" "audio" "disk" "networkmanager" "input" "docker" ]; # Enable ‘sudo’ for the user.
     uid = 1001;
   };
+  users.users.null = {
+    createHome = true;
+    group = "users";
+    isNormalUser = true;
+    extraGroups = [ "wheel" "video" "audio" "disk" "networkmanager" "input" "docker" ]; # Enable ‘sudo’ for the user.
+    uid = 1002;
+  };
 
   home-manager.users.infty = import /home/infty/config/nixos/home.nix;
 
