@@ -267,15 +267,15 @@ in {
    # };
 
   systemd.user.tmpfiles.rules = [
-    "d /home/infty/downloads - - - - -"
-    "d /home/infty/documents - - - - -"
-    "d /home/infty/images    - - - - -"
-    "d /home/infty/projects  - - - - -"
-    "d /home/infty/notes     - - - - -"
-    "d /home/infty/tmp       - - - - -"
-    "d /home/infty/secrets   - - - - -"
-    "d /home/infty/media     - - - - -"
     "d /home/infty/archive   - - - - -"
+    "d /home/infty/documents - - - - -"
+    "d /home/infty/downloads - - - - -"
+    "d /home/infty/images    - - - - -"
+    "d /home/infty/media     - - - - -"
+    "d /home/infty/notes     - - - - -"
+    "d /home/infty/projects  - - - - -"
+    "d /home/infty/secrets   - - - - -"
+    "d /home/infty/tmp       - - - - -"
   ];
 
   xdg.mimeApps.enable = true;
