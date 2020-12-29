@@ -24,6 +24,10 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
+    fd
+    tealdeer
+    jetbrains.pycharm-community
+    # factorio
     xcalib
     gopass
     rxvt-unicode
@@ -56,6 +60,7 @@ in {
     niv
     peco
     picom # replacement for compton
+    #python38Packages.pudb
     python39Full
     python39Packages.pyyaml # required by alacritty-theme-switch.py
     python39Packages.virtualenv
@@ -71,7 +76,6 @@ in {
     tdesktop
     unstable.tectonic
     theme-vertex
-    tldr
     tor-browser-bundle-bin
     tree
     unstable.haskellPackages.haskell-language-server
