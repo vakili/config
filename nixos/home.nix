@@ -118,7 +118,8 @@ in {
       enableBashIntegration = true;
       settings = {
         add_newline = false;
-        prompt_order = [ "directory" "git_branch" "nix_shell" "python" "character" ];
+        # prompt_order = [ "directory" "git_branch" "nix_shell" "python" "character" ];
+        prompt_order = [ "directory" "nix_shell" "character" ];
         scan_timeout = 10;
         character.symbol = "$";
       };
