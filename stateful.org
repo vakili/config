@@ -1,17 +1,24 @@
-stateful steps
-  element
-    authenticate
-    set dark theme
-  signal
-    authenticate
-    set dark theme
-  telegram
-    authenticate
-    set dark theme
-  emacs
+* stateful steps
+** element
+*** TODO authenticate
+*** TODO set dark theme
+** signal
+*** TODO authenticate
+*** TODO set dark theme
+** telegram
+*** TODO authenticate
+*** TODO set dark theme
+** emacs
+*** install spacemacs
     git clone --single-branch -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
-    configure spacemacs
-  nix-search
-    nix-env -qa -P | awk '{print $1}' > /home/infty/.cache/nixos-options/packages.txt
-  direnv
-    run `direnv-allow`
+*** configure spacemacs
+**** TODO set window name to open buffer name 
+** nix-search
+*** generate list of packages
+   nix-env -qa -P | awk '{print $1}' > /home/infty/.cache/nixos-options/packages.txt
+** direnv
+*** allow direnv in certain directories
+    direnv-allow # run in relevant directory
+** mullvad
+*** set account
+    cat ~/secrets/mullvad-account | xargs mullvad account set 
