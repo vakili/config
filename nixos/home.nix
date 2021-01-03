@@ -24,6 +24,8 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
+    spotifyd
+    spotify-tui
     fd
     tealdeer
     jetbrains.pycharm-community
@@ -91,6 +93,7 @@ in {
   ];
 
   services = {
+    spotifyd.enable = true;
     emacs.enable = true;
     unclutter.enable = true;
   };
