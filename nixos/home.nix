@@ -93,12 +93,20 @@ in {
   ];
 
   services = {
+    # picom = {
+    #   enable = true;
+    #   inactiveDim = "0.1";
+    # };
     spotifyd.enable = true;
     emacs.enable = true;
     unclutter.enable = true;
+    gpg-agent.enable = true;
   };
 
   programs = {
+    gpg = {
+      enable = true;
+    };
     direnv = {
       enable = true;
       enableNixDirenvIntegration = true;
