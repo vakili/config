@@ -294,17 +294,17 @@ in {
   xdg.mimeApps.defaultApplications = {
     "application/pdf"               = [ "org.pwmt.zathura.desktop" ];
     "text/html"                     = [ "qutebrowser.desktop" ];
-    "x-scheme-handler/http"         = [ "firefox.desktop" ];
-    "x-scheme-handler/https"        = [ "firefox.desktop" ];
-    "application/x-extension-htm"   = [ "firefox.desktop" ];
-    "application/x-extension-html"  = [ "firefox.desktop" ];
-    "application/x-extension-shtml" = [ "firefox.desktop" ];
-    "application/xhtml+xml"         = [ "firefox.desktop" ];
-    "application/x-extension-xht"   = [ "firefox.desktop" ];
+    "x-scheme-handler/http"         = [ "qutebrowser.desktop" ];
+    "x-scheme-handler/https"        = [ "qutebrowser.desktop" ];
+    "application/x-extension-htm"   = [ "qutebrowser.desktop" ];
+    "application/x-extension-html"  = [ "qutebrowser.desktop" ];
+    "application/x-extension-shtml" = [ "qutebrowser.desktop" ];
+    "application/xhtml+xml"         = [ "qutebrowser.desktop" ];
+    "application/x-extension-xht"   = [ "qutebrowser.desktop" ];
     "image/png"                     = [ "feh.desktop" ];
     "image/vnd.djvu"                = [ "org.pwmt.zathura.desktop" ];
-    "x-scheme-handler/about"        = [ "firefox.desktop" ];
-    "x-scheme-handler/unknown"      = [ "firefox.desktop" ];
+    # "x-scheme-handler/about"        = [ "qutebrowser.desktop" ];
+    # "x-scheme-handler/unknown"      = [ "qutebrowser.desktop" ];
   };
 
   nixpkgs.config.allowUnfree = true;
