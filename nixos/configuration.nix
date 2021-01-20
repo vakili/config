@@ -189,5 +189,21 @@ in {
 
   nixpkgs.config.allowUnfree = true;
 
+
+
+
+
+  hardware.pulseaudio = {
+    enable = true;
+
+    # NixOS allows either a lightweight build (default) or full build of PulseAudio to be installed.
+    # Only the full build has Bluetooth support, so it must be selected here.
+    package = pkgs.pulseaudioFull;
+  };
+
+  services.blueman.enable = true;
+  hardware.bluetooth.enable = true;
+  # what worked: run blueman-manager, delete device from list of known devices, pair, connect
+
 }
 
