@@ -56,9 +56,10 @@ in {
   services.xserver.layout = "us";
   services.xserver.xkbVariant = "colemak";
   services.xserver.xkbOptions = "caps:swapescape";
+  services.xserver.wacom.enable = true;
   services.xserver = {
     enable = true;
-#    desktopManager.gnome3.enable = true;
+    desktopManager.gnome3.enable = true;
     windowManager.xmonad = {
       enable = true;
       enableContribAndExtras = true;
