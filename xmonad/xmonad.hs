@@ -241,13 +241,13 @@ myApps =
   -- appname    -- hotkey
   [ firefox     -- f
   , zathura     -- a
-  -- , urxvt       -- t
   , alacritty   -- t
   , ranger      -- r
   , qutebrowser -- o
   , emacs       -- e
   , chromium    -- c
   , gimp        -- g
+  , mpv         -- m
   ]
 
 -- `myAppKeys` is a list of concrete keymaps constructed from `myApps`
