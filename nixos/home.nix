@@ -24,6 +24,14 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
+    killall
+    xbindkeys # for configuring mouse buttons together with xvkbd
+    xvkbd # for configuring mouse buttons together with xbindkeys
+    simplescreenrecorder
+    discord
+    ispell
+    pdftk
+    pulseeffects
     spotifyd
     spotify-tui
     fd
