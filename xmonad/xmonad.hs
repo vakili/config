@@ -247,13 +247,19 @@ myApps =
   , emacs       -- e
   , chromium    -- c
   , gimp        -- g
-  , mpv         -- m
+  , mpv         -- v
   ]
 
 -- `myAppKeys` is a list of concrete keymaps constructed from `myApps`
 myAppKeys = concat $ map makeKeys myApps
 
 -- The block below defines applications of interest
+
+mpv = App
+  { keyApp  =             "v"
+  , findApp = className ~=?   "mpv"
+  , runApp  = spawnHere   "mpv" -- NOTE would be nice to have a prompt allowing selection of video (sorted by recent, with thumbnails!)
+  }
 
 firefox = App
   { keyApp =               "f"
