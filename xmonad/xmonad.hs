@@ -300,7 +300,7 @@ alacritty   = App
 
 ranger      = App
   { keyApp  =              "r"
-  , findApp =  title ~=? "ranger:/"
+  , findApp =  title ~=? "ranger:"
   , runApp  =  runInTerm   "--class ranger" "ranger"
   }
 
