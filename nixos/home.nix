@@ -24,6 +24,16 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
+    rPackages.rgl
+    pandoc
+    krop # gui pdf cropper
+    masterpdfeditor
+    xournal
+    mypaint
+    xorg.xev
+    pcre
+    xorg.xmessage
+    maim # screenshot utility
     killall
     xbindkeys # for configuring mouse buttons together with xvkbd
     xvkbd # for configuring mouse buttons together with xbindkeys
