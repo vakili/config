@@ -118,7 +118,7 @@ in {
     # };
     spotifyd.enable = true;
     emacs.enable = true;
-    unclutter.enable = true;
+    unclutter.enable = true; # hide cursor after set time
     gpg-agent.enable = true;
   };
 
@@ -250,7 +250,7 @@ in {
     };
     rofi = {
       enable = true;
-      theme = "gruvbox-dark";
+      # theme = "gruvbox-dark";
         extraConfig = ''
           ! the following line unbinds C-l to make it available for rebinding
           rofi.kb-remove-to-eol:
@@ -313,6 +313,7 @@ in {
   xdg.mimeApps.defaultApplications = {
     "application/pdf"               = [ "org.pwmt.zathura.desktop" ];
     "text/html"                     = [ "qutebrowser.desktop" ];
+    "text/plain"                    = [ "emacsclient.desktop" ];
     "x-scheme-handler/http"         = [ "qutebrowser.desktop" ];
     "x-scheme-handler/https"        = [ "qutebrowser.desktop" ];
     "application/x-extension-htm"   = [ "qutebrowser.desktop" ];
