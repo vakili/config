@@ -111,6 +111,7 @@ in {
   ];
 
   services = {
+    flameshot.enable = true;
     # picom = {
     #   enable = true;
     #   inactiveDim = "0.1";
