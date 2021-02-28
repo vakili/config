@@ -30,6 +30,7 @@ import XMonad.Util.Run
 import qualified Data.Map as M
 import qualified XMonad.StackSet as W
 import qualified XMonad.Util.ExtensibleState as XS
+import XMonad.Layout.IndependentScreens
 
 main = do
   d <- spawnPipe myDzenArgs
