@@ -156,6 +156,8 @@ myKeys =
   , ("M-i"         , spawnHere myLauncher)                                                     -- run app by name via rofi
   , ("M-s"         , scratchTerm)                                                              -- toggle scratchpad
   , ("M-q"         , spawn "xmonad --recompile; kill -9 $(pgrep dzen); xmonad --restart")      -- restart xmonad
+  , ("<Print>"     , spawnHere "sleep 0.4; maim -s -u | xclip -selection clipboard -t image/png -i")      -- screenshot region to clipboard
+  , ("M-S-i"       , spawnHere "fd -d 4 | rofi -dmenu | xargs xdg-open")                       -- file picker
 
   ----------------------
   -- temporary things --
