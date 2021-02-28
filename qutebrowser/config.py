@@ -48,12 +48,12 @@ config.bind('tg', 'tab-give')
 config.bind('<Ctrl-n>', 'config-cycle statusbar.hide')
 config.bind('U', 'tab-focus last')
 
-
 # search engines
 # c.url.searchengines = {"DEFAULT":'https://google.com/search?hl=en&q={}'}
 c.url.searchengines = {
    # "DEFAULT":'https://duckduckgo.com/?q={}&kae=d&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&ko=-1', # dark
-   "DEFAULT":'https://duckduckgo.com/?q={}&kae=b&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&ko=-1', # light/bright
+   # "DEFAULT":'https://duckduckgo.com/?q={}&kae=b&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&ko=-1', # light/bright
+   "DEFAULT":'https://duckduckgo.com/?q={}&k1=-1&kc=-1&kaj=m&kak=-1&kax=-1&kaq=-1&kap=-1&kao=-1&kau=-1&kae=c&kt=p&ks=l&km=l&ko=d&k18=1&kg=g', # light/bright
    "np": 'https://search.nixos.org/packages?query={}&from=0&size=30&sort=relevance&channel=20.09',
    "no": 'https://search.nixos.org/options?query={}&from=0&size=30&sort=relevance&channel=unstable',
    "hg": 'https://hoogle.haskell.org/?hoogle={}',
