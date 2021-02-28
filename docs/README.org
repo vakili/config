@@ -1,0 +1,4 @@
+* Bluetooth
+  run blueman-manager, delete device from list of known devices, pair, connect
+* Spotify
+  run spotifyd with configured username and password
