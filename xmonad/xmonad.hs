@@ -197,7 +197,7 @@ myLauncherArgs = "" -- rofi config delegated to home.nix
 
 myDzenArgs = "dzen2 -dock -p -xs 1 -ta l -e 'onstart=lower' -fn terminus:bold:pixelsize=12"
 
-myBorderWidth = 2
+myBorderWidth = 3 --pixels
 
 -- logTitles is used to show window titles in dzen2
 logTitles :: (String -> String) -> Logger
