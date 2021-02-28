@@ -245,7 +245,7 @@ myApps =
   [ firefox     -- f
   , zathura     -- a
   , alacritty   -- t
-  , ranger      -- r
+  -- , ranger      -- r
   , qutebrowser -- o
   , emacs       -- e
   , chromium    -- c
