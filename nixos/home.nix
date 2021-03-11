@@ -271,6 +271,7 @@ in {
   };
 
   home.file = {
+    ".local/share/applications/emacsclient.desktop".source    = "${configdir}/misc/emacsclient.desktop";
     ".config/nixpkgs/config.nix".source                       = "${configdir}/nixos/config.nix";
     ".config/alacritty/alacritty.yml".source                              = "${configdir}/alacritty/alacritty.yml";
     ".emacs.d/layers/direnv".source                           = "${configdir}/emacs/layers/direnv";
