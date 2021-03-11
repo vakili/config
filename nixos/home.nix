@@ -315,6 +315,7 @@ in {
     "application/pdf"               = [ "org.pwmt.zathura.desktop" ];
     "text/html"                     = [ "qutebrowser.desktop" ];
     "text/plain"                    = [ "emacsclient.desktop" ];
+    "text/x-tex"                    = [ "emacsclient.desktop" ];
     "x-scheme-handler/http"         = [ "qutebrowser.desktop" ];
     "x-scheme-handler/https"        = [ "qutebrowser.desktop" ];
     "application/x-extension-htm"   = [ "qutebrowser.desktop" ];
