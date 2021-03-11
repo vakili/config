@@ -221,6 +221,9 @@ in {
   echo -e "\e]2;$(pwd)\e\\" # set title to working directory
 	export HISTCONTROL=ignoreboth:erasedups # deduplicate history
   export DIRENV_LOG_FORMAT= # make direnv silent
+  e () {
+    emacsclient -c -a emacs $1 &
+  }
       '';
     };
     chromium = {
