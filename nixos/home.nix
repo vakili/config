@@ -7,7 +7,9 @@ let
   unstable = import unstableTarball { config = { allowUnfree = true; }; };
   nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {inherit pkgs;};
   tarsnap_key_file = "/home/infty/secrets/tarsnap.key";
-
+  file-opener = pkgs.writeScriptBin "o" ''
+      xdg-open $1 & disown
+  '';   
 in {
   gtk = {
     enable = true;
@@ -24,7 +26,8 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
-    rPackages.rgl
+    file-opener
+    ripgrep-all
     pandoc
     krop # gui pdf cropper
     masterpdfeditor
@@ -221,9 +224,6 @@ in {
   echo -e "\e]2;$(pwd)\e\\" # set title to working directory
 	export HISTCONTROL=ignoreboth:erasedups # deduplicate history
   export DIRENV_LOG_FORMAT= # make direnv silent
-  e () {
-    emacsclient -c -a emacs $1 &
-  }
       '';
     };
     chromium = {
