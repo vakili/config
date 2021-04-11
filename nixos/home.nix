@@ -12,7 +12,10 @@ let
   tarsnap_key_file = "/home/infty/secrets/tarsnap.key";
   file-opener = pkgs.writeScriptBin "o" ''
       xdg-open $1 & disown
-  '';   
+  '';
+  zathura-copy-path = pkgs.writeScriptBin "zathura-copy-path" ''
+      echo $1 | xclip -i -selection c
+  '';
 in {
   gtk = {
     enable = true;
