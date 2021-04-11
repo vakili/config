@@ -247,7 +247,7 @@ myApps =
   [ firefox     -- f
   , zathura     -- a
   , alacritty   -- t
-  -- , ranger      -- r
+  , ranger      -- r
   , qutebrowser -- o
   , emacs       -- e
   , chromium    -- c
@@ -258,7 +258,12 @@ myApps =
 -- `myAppKeys` is a list of concrete keymaps constructed from `myApps`
 myAppKeys = concat $ map makeKeys myApps
 
--- The block below defines applications of interest
+-- -- The block below defines applications of interest
+-- lf = App
+--   { keyApp  =             "l"
+--   , findApp = className ~=?   "lf"
+--   , runApp  = spawnHere   "mpv" -- NOTE would be nice to have a prompt allowing selection of video (sorted by recent, with thumbnails!)
+--   }
 
 mpv = App
   { keyApp  =             "v"
@@ -387,7 +392,6 @@ actualizeHState = do
   spawn $ "redshift -P -O " ++ (show $ screenTemp currentState)
   -- spawn $ "light -S " ++ (show $ check $ keyboardLight currentState) ++ " -s sysfs/leds/tpacpi::kbd_backlight;" -- get this by running `light -L`
   spawn $ "amixer sset Master " ++ (show $ audioLevel currentState) ++ "%"
-
 
 
 showState :: X () -- used for debugging
