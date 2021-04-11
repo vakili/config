@@ -32,6 +32,15 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
+    guile
+    unstable.linuxPackages.v4l2loopback
+    unstable.obs-studio
+    uvcdynctrl
+    ffmpeg-full
+    zathura-copy-path
+    python38Packages.jupyter_core
+    jupyter
+    youtube-dl
     file-opener
     ripgrep-all
     pandoc
@@ -47,7 +56,7 @@ in {
     xbindkeys # for configuring mouse buttons together with xvkbd
     xvkbd # for configuring mouse buttons together with xbindkeys
     simplescreenrecorder
-    discord
+    unstable.discord
     ispell
     pdftk
     pulseeffects
@@ -55,7 +64,7 @@ in {
     spotify-tui
     fd
     tealdeer
-    jetbrains.pycharm-community
+    # unstable.jetbrains.pycharm-community
     # factorio
     xcalib
     gopass
@@ -97,22 +106,22 @@ in {
     ranger
     redshift
     ripgrep
-    rstudio
+    # rstudio
     scrot
     signal-desktop
     skim
     slack
     tdesktop
-    unstable.tectonic
+    # unstable.tectonic
     theme-vertex
     tor-browser-bundle-bin
     tree
-    unstable.haskellPackages.haskell-language-server
-    unstable.ledger-live-desktop
-    unstable.monero-gui
-    unstable.nodePackages.pyright
-    unstable.qutebrowser
-    unstable.yggdrasil
+    # unstable.haskellPackages.haskell-language-server
+    # unstable.ledger-live-desktop
+    # unstable.monero-gui
+    # unstable.nodePackages.pyright
+    master.qutebrowser
+    # unstable.yggdrasil
     unstable.zoom-us
     unzip
     vimPlugins.vim-plug
