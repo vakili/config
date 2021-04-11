@@ -161,8 +161,10 @@ in {
          recolor = "true";
          window-title-home-tilde = "true";
          statusbar-home-tilde = "true";
-         # TODO replace C-o with yy
        };
+       extraConfig = ''
+         map y feedkeys ":exec zathura-copy-path $FILE<Return>"
+       '';
      };
     alacritty = {
       enable = true;
