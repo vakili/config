@@ -114,6 +114,7 @@ myKeys =
       , ((0, xK_n),     windowMark "n")
       , ((0, xK_a),     windowMark "a")
       , ((0, xK_b),     windowMark "b")
+      , ((0, xK_w),     windowMark "w")
       ])
   , ("M-'", submap . M.fromList $
       [ ((0, xK_m),     windowJump "m")
@@ -121,6 +122,7 @@ myKeys =
       , ((0, xK_a),     windowJump "a")
       , ((0, xK_b),     windowJump "b")
       ])
+  , ("M-w" , windowJump "w")                 -- jump to window marked with 'w'
 
   --------------------
   -- screen control --
