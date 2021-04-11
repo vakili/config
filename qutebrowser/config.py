@@ -1,5 +1,27 @@
 from qutebrowser.api import interceptor # for youtube adblocking
 
+config.load_autoconfig(False)
+
+c.fileselect.handler = 'external'
+
+c.content.blocking.method = 'adblock'
+c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt', 'https://easylist-downloads.adblockplus.org/easylistdutch.txt', 'https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt', 'https://www.i-dont-care-about-cookies.eu/abp/', 'https://secure.fanboy.co.nz/fanboy-cookiemonster.txt']
+
+# getting rid of annoying cookie bars
+# see https://www.reddit.com/r/qutebrowser/comments/mnptey/getting_rid_of_cookie_consent_barspopups/
+config.bind('e', 'jseval (function () { '+
+'  var i, elements = document.querySelectorAll("body *");'+
+''+
+'  for (i = 0; i < elements.length; i++) {'+
+'    var pos = getComputedStyle(elements[i]).position;'+
+'    if (pos === "fixed" || pos == "sticky") {'+
+'      elements[i].parentNode.removeChild(elements[i]);'+
+'    }'+
+'  }'+
+'})();');
+
+
+
 # initiate editor with custom vimrc
 # c.editor.command = ['urxvt', '-name', 'qute-editor', '-e','vim', '-S', '~/.config/qutebrowser/editor.vimrc', '{}']
 # c.editor.command = ['urxvt', '-name', 'qute-editor', '-e','vim', '-S', '{}']
@@ -42,7 +64,7 @@ config.bind('ma', 'set-mark a')
 
 # other
 config.bind('zo', 'download-open')
-config.bind('e', 'open-editor')
+#config.bind('e', 'open-editor')
 config.bind('cs', 'config-source')
 config.bind('tg', 'tab-give')
 config.bind('<Ctrl-n>', 'config-cycle statusbar.hide')
@@ -109,7 +131,6 @@ def filter_yt(info: interceptor.Request):
     ):
         info.block()
 interceptor.register(filter_yt)
-
 
 # enable readline keybindings in insert mode
 # source: https://gist.github.com/Gavinok/f9c310a66576dc00329dd7bef2b122a1
