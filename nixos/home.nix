@@ -235,12 +235,15 @@ in {
       historySize = 10000000;
       historyIgnore = [ "l" "ls" "exit" "cd"];
       shellAliases = { # bash aliases
-        "d"     = "date --iso-8601";
+        "r"      = "ranger";
+        "doom"   = "$DOOM";
+        "d"      = "date --iso-8601";
         ".."     = "cd ..";
         "..."    = "cd ../..";
         "vim"    = "nvim";
         "ns"     = "nix-shell";
         "sw"     = "sudo nixos-rebuild switch";
+        "cal"    = "cal -mw";
 	"tarsnap" = "tarsnap --keyfile ${tarsnap_key_file}";
       };
       initExtra = ''
