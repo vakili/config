@@ -17,6 +17,11 @@ in {
       "${home-manager}/nixos" 
     ];
 
+  # set kernel package for obs, see
+  # https://brittanderson.github.io/posts/2020-08-05-using-a-camera-as-a-webcam.html
+  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
+
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
