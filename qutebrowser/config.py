@@ -29,13 +29,10 @@ config.bind('e', 'jseval (function () { '+
 # c.editor.command = ['urxvt', '-name', 'qute-editor', '-e','vim', '-S', '{file}']
 c.editor.command = ['urxvt', '-e','vim', '{}']
 
-# # https://old.reddit.com/r/qutebrowser/comments/jdnqbp/yet_another_dark_mode_post/
-c.colors.webpage.darkmode.enabled = True; # dark/night mode
-c.colors.webpage.darkmode.policy.images = 'smart'
-c.colors.webpage.bg = 'black'
-
-
-
+# # # # https://old.reddit.com/r/qutebrowser/comments/jdnqbp/yet_another_dark_mode_post/
+# c.colors.webpage.darkmode.enabled = True; # dark/night mode
+# c.colors.webpage.darkmode.policy.images = 'smart'
+# c.colors.webpage.bg = 'black'
 
 # custom commands
 
