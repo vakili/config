@@ -6,6 +6,8 @@ let
   # unstableTarball = fetchTarball https://github.com/NixOS/nixpkgs-channels/archive/nixos-unstable.tar.gz;
   unstableTarball = fetchTarball https://github.com/NixOS/nixpkgs/archive/nixpkgs-unstable.tar.gz;
   unstable = import unstableTarball { config = { allowUnfree = true; }; };
+  masterTarball = fetchTarball https://github.com/NixOS/nixpkgs/archive/master.tar.gz;
+  master = import masterTarball { config = { allowUnfree = true; }; };
   nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {inherit pkgs;};
   tarsnap_key_file = "/home/infty/secrets/tarsnap.key";
   file-opener = pkgs.writeScriptBin "o" ''
