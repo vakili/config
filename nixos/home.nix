@@ -345,6 +345,9 @@ in {
     "text/html"                     = [ "qutebrowser.desktop" ];
     "text/plain"                    = [ "emacsclient.desktop" ];
     "text/x-tex"                    = [ "emacsclient.desktop" ];
+    "text/x-haskell"                = [ "emacsclient.desktop" ];
+    "text/markdown"                 = [ "emacsclient.desktop" ];
+    "text/x-readme"                 = [ "emacsclient.desktop" ];
     "x-scheme-handler/http"         = [ "qutebrowser.desktop" ];
     "x-scheme-handler/https"        = [ "qutebrowser.desktop" ];
     "application/x-extension-htm"   = [ "qutebrowser.desktop" ];
@@ -354,8 +357,9 @@ in {
     "application/x-extension-xht"   = [ "qutebrowser.desktop" ];
     "image/png"                     = [ "feh.desktop" ];
     "image/vnd.djvu"                = [ "org.pwmt.zathura.desktop" ];
-    # "x-scheme-handler/about"        = [ "qutebrowser.desktop" ];
-    # "x-scheme-handler/unknown"      = [ "qutebrowser.desktop" ];
+    "inode/directory"               = [ "ranger.desktop" ];
+    # "x-scheme-handler/about"      = [ "qutebrowser.desktop" ];
+    # "x-scheme-handler/unknown"    = [ "qutebrowser.desktop" ];
   };
 
   nixpkgs.config.allowUnfree = true;

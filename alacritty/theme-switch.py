@@ -1,6 +1,8 @@
 #!/usr/bin/env nix-shell
 #! nix-shell -i python -p python39Packages.pyyaml
 
+# see https://github.com/schuam/.dotfiles/tree/master/.config/alacritty
+
 import yaml
 import os
 import re
