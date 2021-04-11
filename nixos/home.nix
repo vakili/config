@@ -159,8 +159,9 @@ in {
          default-bg = "#101215";
          selection-clipboard = "clipboard";
          recolor = "true";
-	 window-title-home-tilde = "true";
-	 statusbar-home-tilde = "true";
+         window-title-home-tilde = "true";
+         statusbar-home-tilde = "true";
+         # TODO replace C-o with yy
        };
      };
     alacritty = {
