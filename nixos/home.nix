@@ -248,9 +248,10 @@ in {
 	"tarsnap" = "tarsnap --keyfile ${tarsnap_key_file}";
       };
       initExtra = ''
-  echo -e "\e]2;$(pwd)\e\\" # set title to working directory
-	export HISTCONTROL=ignoreboth:erasedups # deduplicate history
-  export DIRENV_LOG_FORMAT= # make direnv silent
+        echo -e "\e]2;$(pwd)\e\\" # set title to working directory
+	    export HISTCONTROL=ignoreboth:erasedups # deduplicate history
+        export DIRENV_LOG_FORMAT= # make direnv silent
+        . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
       '';
     };
     chromium = {
