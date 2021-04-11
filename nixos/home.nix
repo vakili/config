@@ -281,7 +281,7 @@ in {
     };
     rofi = {
       enable = true;
-      # theme = "gruvbox-dark";
+      theme = "gruvbox-dark";
         extraConfig = ''
           ! the following line unbinds C-l to make it available for rebinding
           rofi.kb-remove-to-eol:
