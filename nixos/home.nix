@@ -183,6 +183,7 @@ in {
     };
     emacs = {
       enable = true;
+      extraPackages = epkgs: [ epkgs.zmq ];
     };
     git = {
       enable = true;
