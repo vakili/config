@@ -128,6 +128,10 @@ in {
     xclip
   ];
 
+  home.sessionVariables = {
+    DOOM = "/home/infty/.emacs.d/bin/doom";
+  };
+
   services = {
     flameshot.enable = true;
     # picom = {
