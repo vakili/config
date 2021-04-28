@@ -32,100 +32,100 @@ in {
     ];
   };
   home.packages = with pkgs; [ # list of packages
-    guile
-    unstable.linuxPackages.v4l2loopback
-    unstable.obs-studio
-    uvcdynctrl
-    ffmpeg-full
-    zathura-copy-path
-    python38Packages.jupyter_core
-    jupyter
-    youtube-dl
-    file-opener
-    ripgrep-all
-    pandoc
-    krop # gui pdf cropper
-    masterpdfeditor
-    xournal
-    mypaint
-    xorg.xev
-    pcre
-    xorg.xmessage
-    maim # screenshot utility
-    killall
-    xbindkeys # for configuring mouse buttons together with xvkbd
-    xvkbd # for configuring mouse buttons together with xbindkeys
-    simplescreenrecorder
-    unstable.discord
-    ispell
-    pdftk
-    pulseeffects
-    spotifyd
-    spotify-tui
-    fd
-    tealdeer
-    # unstable.jetbrains.pycharm-community
     # factorio
-    xcalib
-    gopass
-    rxvt-unicode
-    ueberzug
-    libcaca
-    w3m
-    mupdf
-    nur.repos.moredread.nix-search # see https://discourse.nixos.org/t/handy-scripts-for-fuzzy-searching-nixpkgs-and-nixos-options/1659 (search: `generate`)NOTE throws errors
+    # rstudio
+    # texlive.combined.scheme-full
+    #python38Packages.pudb
     acpi
     ag
     age
     age
     bat
     black
+    conda
     dconf # needed for gtk theme
     deluge
     dzen2
     element-desktop
+    fd
     feh
+    ffmpeg
+    file-opener
     fzf
     gcc
     ghc
     google-cloud-sdk
+    gopass
+    ispell
+    jetbrains.pycharm-community
+    jupyter
+    killall
+    krop # gui pdf cropper
+    libcaca
     libstdcxx5 # dependency for pandas
     magic-wormhole
+    maim # screenshot utility
+    master.qutebrowser
+    masterpdfeditor
     mpv
     mullvad-vpn
+    mupdf
+    mypaint
     ncdu
     neovim
     niv
+    nur.repos.moredread.nix-search # see https://discourse.nixos.org/t/handy-scripts-for-fuzzy-searching-nixpkgs-and-nixos-options/1659 (search: `generate`)NOTE throws errors
+    pandoc
+    pcre
+    pdftk
     peco
     picom # replacement for compton
-    #python38Packages.pudb
+    pulseeffects
+    # python38Packages.isort
+    # python38Packages.jupyter_core
+    # python38Packages.pyflakes
     python39Full
-    python39Packages.pyyaml # required by alacritty-theme-switch.py
-    python39Packages.virtualenv
+    # python39Packages.pyyaml # required by alacritty-theme-switch.py
+    # python39Packages.virtualenv
     rage
     ranger
     redshift
     ripgrep
-    # rstudio
+    ripgrep-all
+    rxvt-unicode
     scrot
     signal-desktop
+    simplescreenrecorder
     skim
     slack
+    spotify-tui
+    spotifyd
     tdesktop
-    # unstable.tectonic
+    tealdeer
     theme-vertex
     tor-browser-bundle-bin
     tree
-    # unstable.haskellPackages.haskell-language-server
-    # unstable.ledger-live-desktop
-    # unstable.monero-gui
-    # unstable.nodePackages.pyright
-    master.qutebrowser
-    # unstable.yggdrasil
+    ueberzug
+    unstable.discord
+    unstable.haskellPackages.haskell-language-server
+    unstable.ledger-live-desktop
+    unstable.monero-gui
+    unstable.nodePackages.pyright
+    unstable.tectonic
+    unstable.yggdrasil
     unstable.zoom-us
     unzip
     vimPlugins.vim-plug
+    w3m
+    xbindkeys # for configuring mouse buttons together with xvkbd
+    xcalib
     xclip
+    xorg.xev
+    xorg.xmessage
+    xournal
+    xvkbd # for configuring mouse buttons together with xbindkeys
+    youtube-dl
+    zathura-copy-path
   ];
 
   home.sessionVariables = {
