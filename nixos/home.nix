@@ -146,7 +146,9 @@ in {
   };
 
   programs = {
-    # lf = { enable = true; }; # alternative to ranger
+    lf = {
+      enable = true;
+    };
     gpg = {
       enable = true;
     };
