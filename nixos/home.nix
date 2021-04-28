@@ -133,6 +133,7 @@ in {
   };
 
   services = {
+    # lorri.enable = true;
     flameshot.enable = true;
     # picom = {
     #   enable = true;
