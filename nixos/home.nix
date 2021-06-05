@@ -35,7 +35,24 @@ in {
     # factorio
     # rstudio
     # texlive.combined.scheme-full
+    # texlive.combined.scheme-small
     #python38Packages.pudb
+    R
+    python39Packages.numpy
+    rPackages.languageserver
+    rPackages.lintr
+    nixfmt
+    rPackages.styler
+    gitAndTools.gh
+    master.teams
+    rust-analyzer
+    master.atom
+    rlwrap # readline
+    master.guile
+    linuxPackages.v4l2loopback
+    jitsi-meet-electron
+    zeal
+    unstable.obs-studio
     acpi
     ag
     age
@@ -72,7 +89,6 @@ in {
     mupdf
     mypaint
     ncdu
-    neovim
     niv
     nur.repos.moredread.nix-search # see https://discourse.nixos.org/t/handy-scripts-for-fuzzy-searching-nixpkgs-and-nixos-options/1659 (search: `generate`)NOTE throws errors
     pandoc
@@ -107,12 +123,12 @@ in {
     tree
     ueberzug
     unstable.discord
-    unstable.haskellPackages.haskell-language-server
-    unstable.ledger-live-desktop
-    unstable.monero-gui
+    # unstable.haskellPackages.haskell-language-server
+    # unstable.ledger-live-desktop
+    # unstable.monero-gui
     unstable.nodePackages.pyright
-    unstable.tectonic
-    unstable.yggdrasil
+    # unstable.tectonic
+    # unstable.yggdrasil
     unstable.zoom-us
     unzip
     vimPlugins.vim-plug
